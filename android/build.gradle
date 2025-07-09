@@ -32,10 +32,17 @@ android {
         main.java.srcDirs += 'src/main/kotlin'
     }
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 35
     }
     lintOptions {
         disable 'InvalidPackage'
+    }
+    kotlinOptions {
+        jvmTarget = '17' //  <-- SET THIS TO A COMPATIBLE VERSION
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
 
