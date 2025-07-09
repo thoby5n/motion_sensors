@@ -38,11 +38,7 @@ android {
         disable 'InvalidPackage'
     }
     kotlinOptions {
-        jvmTarget = "17" //  <-- SET THIS TO A COMPATIBLE VERSION
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        jvmTarget = '1.8'
     }
 }
 
